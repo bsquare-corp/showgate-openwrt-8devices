@@ -1,7 +1,9 @@
---- a/tools/mkimage.h
-+++ b/tools/mkimage.h
-@@ -43,9 +43,9 @@
- #endif /* MKIMAGE_DEBUG */
+Index: u-boot-2018.03/tools/mkimage.h
+===================================================================
+--- u-boot-2018.03.orig/tools/mkimage.h
++++ u-boot-2018.03/tools/mkimage.h
+@@ -41,8 +41,8 @@ static inline ulong map_to_sysmem(void *
+ }
  
  #define MKIMAGE_TMPFILE_SUFFIX		".tmp"
 -#define MKIMAGE_MAX_TMPFILE_LEN		256
@@ -9,6 +11,5 @@
  #define MKIMAGE_DEFAULT_DTC_OPTIONS	"-I dts -O dtb -p 500"
 -#define MKIMAGE_MAX_DTC_CMDLINE_LEN	512
 +#define MKIMAGE_MAX_DTC_CMDLINE_LEN	2048
- #define MKIMAGE_DTC			"dtc"   /* assume dtc is in $PATH */
  
- /*
+ #endif /* _MKIIMAGE_H_ */
